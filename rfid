@@ -11,3 +11,5 @@ cd ~
 FQBN=esp32:esp32:esp32:PartitionScheme=huge_app
 arduino-cli compile --fqbn $FQBN rfid_wifi_bt_player
 arduino-cli upload -p /dev/ttyUSB0 --fqbn $FQBN rfid_wifi_bt_player
+
+arduino-cli monitor -p /dev/ttyUSB0 -c baudrate=115200
